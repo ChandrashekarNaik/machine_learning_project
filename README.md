@@ -64,3 +64,31 @@ To set up CI/CD pipeline in heroku we need 3 information
 2. HEROKU_APP_KEY = ff4d29b0-0903-4489-8d3b-9b4826ec0ee3
 3. HEROKU_APP_NAME = ml-deplo-app
 
+
+BUILD DOCKER IMAGE
+'''
+docker build -t <image_name>:<tagname>
+> Note - Image name for the docker must be in lowercase
+'''
+
+TO list docker image
+'''
+docker images
+'''
+
+TO RUN DOCKER IMAGE
+'''
+docker run -p 5000:5000 -e PORT = 5000
+'''
+
+To check running container in docker
+'''
+docker ps
+'''
+
+To stop an container
+'''
+docker stop <container_id>
+
+'''
+
