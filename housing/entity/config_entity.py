@@ -5,7 +5,7 @@ DataIngestionConfig = namedtuple("DataIngestionConfig",
 ["dataset_download_url","tgz_download_dir","raw_data_dir","ingestd_train_dir","ingestd_test_dir"])
 
 
-DataValidationConfig = namedtuple("DataValidationConfig", ["schema_file_path"])
+DataValidationConfig = namedtuple("DataValidationConfig", ["schema_file_path", "report_file_path", "report_page_file_path"])
 
 
 DataTransformationConfig = namedtuple("DataTransformationConfig", ["add_bedroom_per_room",
@@ -20,5 +20,5 @@ ModelEvaluationConfig = namedtuple("ModelEvaluationConfig", ["model_evaluation_f
 
 ModelPusherConfig = namedtuple("ModelPushConfig",["export_dir_path"])
 
-TrainingPipelineConfig = namedtuple("TrainingPipelineConfig", ["artefact_dir"])
+TrainingPipelineConfig = namedtuple("TrainingPipelineConfig", ["artifact_dir"])
 
